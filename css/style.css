@@ -48,8 +48,12 @@ h1, h2, h3 {
 
 .card {
     width: 25rem;
-    height: 36rem;
-    padding: 2rem;
+    height: 40rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
     background-color: white;
     border-radius: 2rem;
 }
@@ -65,11 +69,26 @@ h1, h2, h3 {
 .card .card-hero img{
     width: 100%;
     height: 100%;
+    border-radius: 1rem;
 }
 
 .card .card-body {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.card .card-body .card-body--title {
+    font-size: 2rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.card .card-body .card-body--copy {
+    margin-top: 1.5rem;
+    font-size: var(--copy-font-size);
+    font-weight: var(--font-regular);
+    color: var(--grayish-blue);
 }
